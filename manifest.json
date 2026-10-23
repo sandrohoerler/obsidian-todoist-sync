@@ -1,7 +1,7 @@
 {
   "id": "todoist-one-way",
   "name": "Todoist One-Way Sync",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0",
   "minAppVersion": "1.5.0",
   "description": "Push #todoist Markdown tasks from Obsidian to Todoist. Obsidian is always the source of truth.",
   "author": "Sandro H\u00f6rler",
