@@ -1,4 +1,6 @@
 # Todoist One-Way Sync for Obsidian
+The only Obsidian -> Todoist Task sync without 2way sync. I was searching for such a simple plugin, as i couldn't find it, i created it.
+Works like a charm due to the simplicity of this plugin. Sync gets triggered when a note is saved. All Tasks with a trailing `#todoist` tag on the same line will create a Task in Todoist in the Inbox Project (per default).
 
 Pushes Markdown checkbox tasks from Obsidian to Todoist. It never imports Todoist data and never modifies a note based on Todoist.
 
