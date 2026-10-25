@@ -26,7 +26,7 @@ Create a task like this in a note:
 Then run the command `Todoist One-Way Sync: Push tasks to Todoist now`, or enable sync-on-save. After the task is created in Todoist, the line is updated to include the Todoist task reference:
 
 ```markdown
-* Finish PEMA documentation #todoist <!-- todoist-id:123456789 -->
+* Finish PEMA documentation #todoist
 ```
 
 The plugin updates the matching Todoist task when the note changes. Checking or unchecking the checkbox in Obsidian will close or reopen the equivalent task in Todoist. Changes made directly in Todoist are intentionally ignored and will be overwritten by the next Obsidian sync.
