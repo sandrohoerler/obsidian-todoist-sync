@@ -3,7 +3,7 @@
   "name": "Todoist One-Way Sync",
   "version": "1.0.5",
   "minAppVersion": "1.5.0",
-  "description": "Push #todoist Markdown tasks to Todoist. The note is the source of truth.",
+  "description": "Push tagged Markdown tasks to Todoist. The note is the source of truth.",
   "author": "Sandro Hörler",
   "isDesktopOnly": false
 }

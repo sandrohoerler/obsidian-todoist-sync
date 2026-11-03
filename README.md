@@ -8,7 +8,6 @@ The plugin watches for changes when a note is saved and sends any task line endi
 
 - Pushes Markdown checkbox tasks from Obsidian to Todoist
 - Triggers sync automatically when a note is saved
-- Supports manual pushes from the command palette
 - Tracks tasks using a `todoist-id` marker in the note
 - Keeps Todoist and Obsidian updates intentionally one-way
 
@@ -20,13 +19,16 @@ The plugin watches for changes when a note is saved and sends any task line endi
 
 ## Usage
 
-Create a task like this in a note:
-
-
-Then run the command `Todoist One-Way Sync: Push tasks to Todoist now`, or enable sync-on-save. After the task is created in Todoist, the line is updated to include the Todoist task reference:
+Create a checkbox task that includes the sync tag (`#todoist` by default):
 
 ```markdown
-* Finish PEMA documentation #todoist
+- [ ] Finish PEMA documentation #todoist
+```
+
+With "Sync when a note is saved" enabled, saving the note creates the Todoist task and writes its id back onto that line:
+
+```markdown
+- [ ] Finish PEMA documentation #todoist <!-- todoist-id:1234567890 -->
 ```
 
 The plugin updates the matching Todoist task when the note changes. Checking or unchecking the checkbox in Obsidian will close or reopen the equivalent task in Todoist. Changes made directly in Todoist are intentionally ignored and will be overwritten by the next Obsidian sync.
